@@ -1,0 +1,31 @@
+id,name, pokedex_index, gender, type, nature, size, image_url
+1,Scyther, 123, Male, "Bug, Flying", Adamant, 1.50, https://media.pokemoncentral.it/wiki/5/5d/Artwork0123_RFVF.png
+2,Magikarp, 129, Female, Water, Docile, 0.90, https://media.pokemoncentral.it/wiki/c/c8/Artwork0129_RFVF.png
+3,Eevee, 133, Male, Normal, Lonely, 0.30, https://media.pokemoncentral.it/wiki/b/b0/Artwork0133_RFVF.png
+4,Togepi, 175, Female, Fairy, Gentle, 0.30, https://media.pokemoncentral.it/wiki/6/67/Artwork0175_RFVF.png
+5,Sudowoodo, 185, Male, Rock, Naive, 1.20, https://media.pokemoncentral.it/wiki/2/26/Artwork0185_HGSS.png
+6,Heracross, 214, Female, "Bug, Fighting", Brave, 1.50, https://media.pokemoncentral.it/wiki/d/d4/Artwork0214_RFVF.png
+7,Snorlax, 143, Male, Normal, Relaxed, 2.10, https://media.pokemoncentral.it/wiki/e/e0/Artwork0143_RFVF.png
+8,Lugia, 249, Unknown, "Psychic, Flying", Bold, 5.20, https://media.pokemoncentral.it/wiki/a/a6/Artwork0249_HGSS.png
+9,Chikorita, 152, Female, Grass, Calm, 0.90, https://media.pokemoncentral.it/wiki/5/59/Artwork0152_HGSS.png
+10,Pidgeot, 18, Male, "Normal, Flying", Naughty, 1.50, https://wiki.pokemoncentral.it/Pidgeot#/media/File%3AArtwork0018_RFVF.png
+11,Umbreon, 197, Female, Dark, Careful, 1.00, https://media.pokemoncentral.it/wiki/c/c7/Artwork0197_RFVF.png
+12,Gengar, 94, Male, "Ghost, Poison", Modest, 1.50,https://media.pokemoncentral.it/wiki/d/d1/Artwork0094_RFVF.png
+13,Machamp, 68, Male, Fighting, Hardy, 1.60, https://media.pokemoncentral.it/wiki/a/ac/Artwork0068_RFVF.png
+14,Crobat, 169, Female, "Poison, Flying", Timid, 1.80, https://media.pokemoncentral.it/wiki/3/3a/Artwork0169_HGSS.png
+15,Steelix, 208, Female, "Steel, Ground", Impish, 9.20, https://media.pokemoncentral.it/wiki/0/0a/Artwork0208_HGSS.png
+16,Tyranitar, 248, Male, "Rock, Dark", Jolly, 2.00, https://media.pokemoncentral.it/wiki/a/a1/Artwork0248_HGSS.png
+17,Gyarados, 130, Male, "Water, Flying", Intimidating, 6.50, https://media.pokemoncentral.it/wiki/f/f9/Artwork0130_RFVF.png
+18,Ampharos, 181, Female, Electric, Sassy, 1.40, https://media.pokemoncentral.it/wiki/a/a2/Artwork0181_HGSS.png
+19,Espeon, 196, Male, Psychic, Serious, 0.90, https://media.pokemoncentral.it/wiki/0/0e/Artwork0196_RFVF.png
+20,Mewtwo, 150, Unknown, Psychic, Serious, 2.00, https://media.pokemoncentral.it/wiki/c/cf/Artwork0150_RFVF.png
+21,Blaziken, 257, Female, "Fire, Fighting", Bold, 1.90, https://media.pokemoncentral.it/wiki/c/cf/Artwork0257_RZ.png
+22,Sceptile, 254, Male, Grass, Mild, 1.70, https://media.pokemoncentral.it/wiki/9/9c/Artwork0254_RZ.png
+23,Swampert, 260, Female, "Water, Ground", Brave, 1.50, https://media.pokemoncentral.it/wiki/d/d3/Artwork0260_RZ.png
+24,Ludicolo, 272, Male, "Water, Grass", Jolly, 1.50, https://media.pokemoncentral.it/wiki/2/2c/Artwork0272_RZ.png
+25,Milotic, 350, Female, Water, Gentle, 6.20, https://media.pokemoncentral.it/wiki/e/e4/Artwork0350_RZ.png
+26,Salamence, 373, Male, "Dragon, Flying", Naive, 1.50, https://wiki.pokemoncentral.it/Salamence#/media/File:Artwork0373_RZ.png
+27,Metagross, 376, Unknown, "Steel, Psychic", Careful, 1.60, https://media.pokemoncentral.it/wiki/6/67/Artwork0376_RZ.png
+28,Registeel, 379, Unknown, Steel, Hardy, 1.90, https://media.pokemoncentral.it/wiki/3/39/Artwork0379_RZ.png
+29,Garchomp, 445, Male, "Dragon, Ground", Adamant, 1.90, https://media.pokemoncentral.it/wiki/7/73/Artwork0445_DLPS.png
+30,Lucario, 448, Female, "Fighting, Steel", Timid, 1.20, https://media.pokemoncentral.it/wiki/b/be/Artwork0448_DLPS.png

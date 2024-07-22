@@ -3,7 +3,7 @@
 @section('page-title', 'Edanna Reserve')
 
 @section('main-content')
-    <h1 class="text-center fw-bold">Edanna Reserve</h1>
+    <h1 class="text-center fw-bold mb-5">Edanna Reserve</h1>
 
     <div class="container">
         <table class="table table-hover table-striped text-center">
@@ -28,7 +28,7 @@
                     <td scope="col">{{$animal->health_status}}</td>
                     <td scope="col">{{$animal->location}}</td>
                     <td scope="col">
-                        <a href="{{route('admin.show', $animal)}}" class="btn btn-primary btn-small">Info</a>
+                        <a href="{{route('admin.animal.show', $animal)}}" class="btn btn-primary btn-small">Info</a>
                     </td>
                 </tr>
                 @endforeach
