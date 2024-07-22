@@ -36,9 +36,9 @@ class AnimalController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(string $id)
+    public function show(Animal $animal)
     {
-        return view('Admin.animals.show');
+        return view('Admin.animals.show', compact('animal'));
     }
 
     /**

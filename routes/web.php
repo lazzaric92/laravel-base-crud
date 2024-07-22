@@ -17,4 +17,4 @@ use App\Http\Controllers\Admin\AnimalController as AdminAnimalController;
 
 Route::get('/', [GuestPageController::class, 'index'])->name('guest.home');
 Route::get('/admin/index', [AdminAnimalController::class, 'index'])->name('admin.index');
-Route::get('/admin/show', [AdminAnimalController::class, 'show'])->name('admin.show');
+Route::get('/admin/{animal}', [AdminAnimalController::class, 'show'])->name('admin.show');
