@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Guest\PageController as GuestPageController;
+use App\Http\Controllers\Admin\AnimalController as AdminAnimalController;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,3 +16,5 @@ use App\Http\Controllers\Guest\PageController as GuestPageController;
 */
 
 Route::get('/', [GuestPageController::class, 'index'])->name('guest.home');
+Route::get('/admin/index', [AdminAnimalController::class, 'index'])->name('admin.index');
+Route::get('/admin/show', [AdminAnimalController::class, 'show'])->name('admin.show');
