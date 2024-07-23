@@ -2,7 +2,6 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Guest\PageController as GuestPageController;
-use App\Http\Controllers\Admin\AnimalController as AdminAnimalController;
 use App\Http\Controllers\Admin\PokemonController as AdminPokemonController;
 
 /*
@@ -17,7 +16,5 @@ use App\Http\Controllers\Admin\PokemonController as AdminPokemonController;
 */
 
 Route::get('/', [GuestPageController::class, 'index'])->name('guest.home');
-Route::get('/admin/animal/index', [AdminAnimalController::class, 'index'])->name('admin.animal.index');
-Route::get('/admin/animal/{animal}', [AdminAnimalController::class, 'show'])->name('admin.animal.show');
 Route::get('/admin/pokemon/index', [AdminPokemonController::class, 'index'])->name('admin.pokemon.index');
 Route::get('/admin/pokemon{pokemon}', [AdminPokemonController::class, 'show'])->name('admin.pokemon.show');

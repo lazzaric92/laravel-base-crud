@@ -22,11 +22,20 @@ class PokemonSeeder extends Seeder
                 $newPokemon = new Pokemon();
                 $newPokemon->name = $singlePokemonData[1];
                 $newPokemon->pokedex_index = $singlePokemonData[2];
-                $newPokemon->gender = $singlePokemonData[3];
-                $newPokemon->type = $singlePokemonData[4];
-                $newPokemon->nature = $singlePokemonData[5];
-                $newPokemon->size = $singlePokemonData[6];
-                $newPokemon->image_url = $singlePokemonData[7];
+                $newPokemon->category = $singlePokemonData[3];
+                $newPokemon->ability = $singlePokemonData[4];
+                $newPokemon->gender = $singlePokemonData[5];
+                $newPokemon->primary_type = $singlePokemonData[6];
+                $newPokemon->secondary_type = $singlePokemonData[7];
+                $newPokemon->nature = $singlePokemonData[8];
+                $newPokemon->size = $singlePokemonData[9];
+                $newPokemon->image_url = $singlePokemonData[10];
+                $newPokemon->hp = $singlePokemonData[11];
+                $newPokemon->atk = $singlePokemonData[12];
+                $newPokemon->def = $singlePokemonData[13];
+                $newPokemon->sp_atk = $singlePokemonData[14];
+                $newPokemon->sp_def = $singlePokemonData[15];
+                $newPokemon->speed = $singlePokemonData[16];
                 $newPokemon->save();
             }
         }
