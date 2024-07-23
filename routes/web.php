@@ -17,4 +17,5 @@ use App\Http\Controllers\Admin\PokemonController as AdminPokemonController;
 
 Route::get('/', [AdminPokemonController::class, 'index'])->name('admin.pokemon.index');
 Route::get('/admin/create', [AdminPokemonController::class, 'create'])->name('admin.pokemon.create');
+Route::post('/admin/index', [AdminPokemonController::class, 'store'])->name('admin.pokemon.store');
 Route::get('/admin/pokemon{pokemon}', [AdminPokemonController::class, 'show'])->name('admin.pokemon.show');

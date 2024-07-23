@@ -7,7 +7,7 @@
 @section('main-content')
     <h2 class="text-center fw-bold mb-4">#{{$pokemon->pokedex_index}}: {{$pokemon->name}} </h2>
 
-    <div class="container py-3">
+    <div class="container py-3" id="show-pokemon">
         <div class="row">
             <article class="col-12 d-flex justify-content-between border border-3 border-danger rounded-3 mb-4">
                 <div class="card-image border-end p-4 border-3 border-danger">

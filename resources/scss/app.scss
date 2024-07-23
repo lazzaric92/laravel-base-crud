@@ -4,3 +4,9 @@
 @import "./partials/pages/header.scss";
 @import "./partials/pages/footer.scss";
 @import "./partials/pages/home-main.scss";
+
+#show-pokemon{
+    img{
+        width: 360px;
+    }
+}

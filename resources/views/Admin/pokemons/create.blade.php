@@ -6,7 +6,7 @@
     <div class="container py-4">
         <div class="row justify-content-center">
             <div class="col-4">
-                <form action="" method="POST">
+                <form action="{{route('admin.pokemon.store')}}" method="POST">
                     @csrf
 
                     <div class="mb-3">
@@ -51,7 +51,7 @@
 
                     <div class="mb-3">
                         <label for="size" class="form-label">Size</label>
-                        <input type="number" class="form-control" id="size" name="size">
+                        <input type="number" step=".01" class="form-control" id="size" name="size">
                     </div>
 
                     <div class="mb-3">
@@ -84,9 +84,13 @@
                         <input type="number" class="form-control" id="sp_def" name="sp_def">
                     </div>
 
-                    <div class="mb-3">
+                    <div class="mb-4">
                         <label for="speed" class="form-label">Speed</label>
                         <input type="number" class="form-control" id="speed" name="speed">
+                    </div>
+
+                    <div class="d-flex justify-content-center">
+                        <button type="submit" class="btn btn-danger">Add</button>
                     </div>
                 </form>
             </div>
