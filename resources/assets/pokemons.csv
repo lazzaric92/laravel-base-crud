@@ -1,31 +1,51 @@
-id,name, pokedex_index, gender, type, nature, size, image_url
-1,Scyther, 123, Male, "Bug, Flying", Adamant, 1.50, https://media.pokemoncentral.it/wiki/5/5d/Artwork0123_RFVF.png
-2,Magikarp, 129, Female, Water, Docile, 0.90, https://media.pokemoncentral.it/wiki/c/c8/Artwork0129_RFVF.png
-3,Eevee, 133, Male, Normal, Lonely, 0.30, https://media.pokemoncentral.it/wiki/b/b0/Artwork0133_RFVF.png
-4,Togepi, 175, Female, Fairy, Gentle, 0.30, https://media.pokemoncentral.it/wiki/6/67/Artwork0175_RFVF.png
-5,Sudowoodo, 185, Male, Rock, Naive, 1.20, https://media.pokemoncentral.it/wiki/2/26/Artwork0185_HGSS.png
-6,Heracross, 214, Female, "Bug, Fighting", Brave, 1.50, https://media.pokemoncentral.it/wiki/d/d4/Artwork0214_RFVF.png
-7,Snorlax, 143, Male, Normal, Relaxed, 2.10, https://media.pokemoncentral.it/wiki/e/e0/Artwork0143_RFVF.png
-8,Lugia, 249, Unknown, "Psychic, Flying", Bold, 5.20, https://media.pokemoncentral.it/wiki/a/a6/Artwork0249_HGSS.png
-9,Chikorita, 152, Female, Grass, Calm, 0.90, https://media.pokemoncentral.it/wiki/5/59/Artwork0152_HGSS.png
-10,Pidgeot, 18, Male, "Normal, Flying", Naughty, 1.50, https://wiki.pokemoncentral.it/Pidgeot#/media/File%3AArtwork0018_RFVF.png
-11,Umbreon, 197, Female, Dark, Careful, 1.00, https://media.pokemoncentral.it/wiki/c/c7/Artwork0197_RFVF.png
-12,Gengar, 94, Male, "Ghost, Poison", Modest, 1.50,https://media.pokemoncentral.it/wiki/d/d1/Artwork0094_RFVF.png
-13,Machamp, 68, Male, Fighting, Hardy, 1.60, https://media.pokemoncentral.it/wiki/a/ac/Artwork0068_RFVF.png
-14,Crobat, 169, Female, "Poison, Flying", Timid, 1.80, https://media.pokemoncentral.it/wiki/3/3a/Artwork0169_HGSS.png
-15,Steelix, 208, Female, "Steel, Ground", Impish, 9.20, https://media.pokemoncentral.it/wiki/0/0a/Artwork0208_HGSS.png
-16,Tyranitar, 248, Male, "Rock, Dark", Jolly, 2.00, https://media.pokemoncentral.it/wiki/a/a1/Artwork0248_HGSS.png
-17,Gyarados, 130, Male, "Water, Flying", Intimidating, 6.50, https://media.pokemoncentral.it/wiki/f/f9/Artwork0130_RFVF.png
-18,Ampharos, 181, Female, Electric, Sassy, 1.40, https://media.pokemoncentral.it/wiki/a/a2/Artwork0181_HGSS.png
-19,Espeon, 196, Male, Psychic, Serious, 0.90, https://media.pokemoncentral.it/wiki/0/0e/Artwork0196_RFVF.png
-20,Mewtwo, 150, Unknown, Psychic, Serious, 2.00, https://media.pokemoncentral.it/wiki/c/cf/Artwork0150_RFVF.png
-21,Blaziken, 257, Female, "Fire, Fighting", Bold, 1.90, https://media.pokemoncentral.it/wiki/c/cf/Artwork0257_RZ.png
-22,Sceptile, 254, Male, Grass, Mild, 1.70, https://media.pokemoncentral.it/wiki/9/9c/Artwork0254_RZ.png
-23,Swampert, 260, Female, "Water, Ground", Brave, 1.50, https://media.pokemoncentral.it/wiki/d/d3/Artwork0260_RZ.png
-24,Ludicolo, 272, Male, "Water, Grass", Jolly, 1.50, https://media.pokemoncentral.it/wiki/2/2c/Artwork0272_RZ.png
-25,Milotic, 350, Female, Water, Gentle, 6.20, https://media.pokemoncentral.it/wiki/e/e4/Artwork0350_RZ.png
-26,Salamence, 373, Male, "Dragon, Flying", Naive, 1.50, https://wiki.pokemoncentral.it/Salamence#/media/File:Artwork0373_RZ.png
-27,Metagross, 376, Unknown, "Steel, Psychic", Careful, 1.60, https://media.pokemoncentral.it/wiki/6/67/Artwork0376_RZ.png
-28,Registeel, 379, Unknown, Steel, Hardy, 1.90, https://media.pokemoncentral.it/wiki/3/39/Artwork0379_RZ.png
-29,Garchomp, 445, Male, "Dragon, Ground", Adamant, 1.90, https://media.pokemoncentral.it/wiki/7/73/Artwork0445_DLPS.png
-30,Lucario, 448, Female, "Fighting, Steel", Timid, 1.20, https://media.pokemoncentral.it/wiki/b/be/Artwork0448_DLPS.png
+id,name,pokedex_index,category,ability,gender,primary_type,secondary_type,nature,size,image_url,hp,atk,def,sp_atk,sp_def,speed
+1,Bulbasaur,1,Seed,Overgrow,Male,Grass,Poison,Calm,0.7,https://img.pokemondb.net/artwork/bulbasaur.jpg,45,49,49,65,65,45
+2,Charmander,4,Lizard,Blaze,Female,Fire,None,Brave,0.6,https://img.pokemondb.net/artwork/charmander.jpg,39,52,43,60,50,65
+3,Squirtle,7,Tiny Turtle,Torrent,Male,Water,None,Relaxed,0.5,https://img.pokemondb.net/artwork/squirtle.jpg,44,48,65,50,64,43
+4,Pikachu,25,Mouse,Static,Female,Electric,None,Jolly,0.4,https://img.pokemondb.net/artwork/pikachu.jpg,35,55,40,50,50,90
+5,Jigglypuff,39,Balloon,Cute Charm,Female,Normal,Fairy,Gentle,0.5,https://img.pokemondb.net/artwork/jigglypuff.jpg,115,45,20,45,25,20
+6,Meowth,52,Scratch Cat,Pickup,Male,Normal,None,Hasty,0.4,https://img.pokemondb.net/artwork/meowth.jpg,40,45,35,40,40,90
+7,Psyduck,54,Duck,Damp,Female,Water,None,Docile,0.8,https://img.pokemondb.net/artwork/psyduck.jpg,50,52,48,65,50,55
+8,Machop,66,Superpower,Guts,Male,Fighting,None,Adamant,0.8,https://img.pokemondb.net/artwork/machop.jpg,70,80,50,35,35,35
+9,Gastly,92,Gas,Levitate,Female,Ghost,Poison,Bold,1.3,https://img.pokemondb.net/artwork/gastly.jpg,30,35,30,100,35,80
+10,Eevee,133,Evolution,Run Away,Male,Normal,None,Timid,0.3,https://img.pokemondb.net/artwork/eevee.jpg,55,55,50,45,65,55
+11,Vulpix,37,Fox,Flash Fire,Female,Fire,None,Modest,0.6,https://img.pokemondb.net/artwork/vulpix.jpg,38,41,40,50,65,65
+12,Arcanine,59,Legendary,Intimidate,Male,Fire,None,Bold,1.9,https://img.pokemondb.net/artwork/arcanine.jpg,90,110,80,100,80,95
+13,Togepi,175,Spike Ball,Serene Grace,Female,Fairy,None,Calm,0.3,https://img.pokemondb.net/artwork/togepi.jpg,35,20,65,40,65,20
+14,Ampharos,181,Light,Static,Male,Electric,None,Docile,1.4,https://img.pokemondb.net/artwork/ampharos.jpg,90,75,85,115,90,55
+15,Murkrow,198,Darkness,Insomnia,Female,Dark,Flying,Sassy,0.5,https://img.pokemondb.net/artwork/murkrow.jpg,60,85,42,85,42,91
+16,Heracross,214,Single Horn,Swarm,Male,Bug,Fighting,Brave,1.5,https://img.pokemondb.net/artwork/heracross.jpg,80,125,75,40,95,85
+17,Houndoom,229,Dark Hound,Flash Fire,Female,Dark,Fire,Impish,1.4,https://img.pokemondb.net/artwork/houndoom.jpg,75,90,50,110,80,95
+18,Tyranitar,248,Armor,Sand Stream,Male,Rock,Dark,Adamant,2.0,https://img.pokemondb.net/artwork/tyranitar.jpg,100,134,110,95,100,61
+19,Lugia,249,Diving, Pressure,Female,Psychic,Flying,Timid,5.2,https://img.pokemondb.net/artwork/lugia.jpg,106,90,130,90,154,110
+20,Treecko,252,Wood Gecko,Overgrow,Male,Grass,None,Brave,0.5,https://img.pokemondb.net/artwork/treecko.jpg,40,45,35,65,55,70
+21,Torchic,255,Chick,Blaze,Female,Fire,None,Docile,0.4,https://img.pokemondb.net/artwork/torchic.jpg,45,60,40,70,50,45
+22,Mudkip,258,Mud Fish,Torrent,Male,Water,None,Bashful,0.4,https://img.pokemondb.net/artwork/mudkip.jpg,50,70,50,50,50,40
+23,Ralts,280,Feeling,Synchronize,Female,Psychic,Fairy,Gentle,0.4,https://img.pokemondb.net/artwork/ralts.jpg,28,25,25,45,35,40
+24,Shroomish,285,Mushroom,Effect Spore,Male,Grass,None,Relaxed,0.4,https://img.pokemondb.net/artwork/shroomish.jpg,60,40,60,40,60,35
+25,Slakoth,287,Slacker,Truant,Female,Normal,None,Lax,0.8,https://img.pokemondb.net/artwork/slakoth.jpg,60,60,60,35,35,30
+26,Aron,304,Iron Armor,Sturdy,Male,Steel,Rock,Brave,0.4,https://img.pokemondb.net/artwork/aron.jpg,50,70,100,40,40,30
+27,Trapinch,328,Ant Pit,Hyper Cutter,Female,Ground,None,Adamant,0.7,https://img.pokemondb.net/artwork/trapinch.jpg,45,100,45,45,45,10
+28,Feebas,349,Fish,Swift Swim,Male,Water,None,Quirky,0.6,https://img.pokemondb.net/artwork/feebas.jpg,20,15,20,10,55,80
+29,Chimchar,390,Chimp,Blaze,Female,Fire,None,Naive,0.5,https://img.pokemondb.net/artwork/chimchar.jpg,44,58,44,58,44,61
+30,Bidoof,399,Plump,Simple,Male,Normal,None,Rash,0.5,https://img.pokemondb.net/artwork/bidoof.jpg,59,45,40,35,40,31
+31,Kricketot,401,Cricket,Shed Skin,Female,Bug,None,Hardy,0.3,https://img.pokemondb.net/artwork/kricketot.jpg,37,25,41,25,41,25
+32,Gible,443,Land Shark, Sand Veil, Male, Dragon, Ground, Jolly, 0.7, https://img.pokemondb.net/artwork/gible.jpg, 58, 70, 45, 40, 45, 42
+33,Honchkrow,430,Big Boss, Super Luck, Female, Dark, Flying, Sassy, 0.9, https://img.pokemondb.net/artwork/honchkrow.jpg, 100, 125, 52, 105, 52, 71
+34,Glameow,431,Catty, Limber, Female, Normal, None, Naive, 0.5, https://img.pokemondb.net/artwork/glameow.jpg, 49, 55, 42, 42, 37, 85
+35,Purrloin,509,Devious, Limber, Female, Dark, None, Jolly, 0.4, https://img.pokemondb.net/artwork/purrloin.jpg, 41, 50, 37, 50, 37, 66
+36,Scraggy,559,Shedding, Moxie, Male, Dark, Fighting, Adamant, 0.6, https://img.pokemondb.net/artwork/scraggy.jpg, 50, 75, 70, 35, 70, 48
+37,Sigilyph,561,Avianoid, Magic Guard, Male, Psychic, Flying, Bold, 1.4, https://img.pokemondb.net/artwork/sigilyph.jpg, 72, 58, 80, 103, 80, 97
+38,Archeops,567,First Bird, Defeatist, Male, Rock, Flying, Rash, 1.4, https://img.pokemondb.net/artwork/archeops.jpg, 75, 140, 65, 112, 65, 110
+39,Frillish,592,Floating, Water Absorb, Male, Water, Ghost, Calm, 1.2, https://img.pokemondb.net/artwork/frillish.jpg, 55, 40, 50, 65, 85, 40
+40,Froakie,656,Bubble Frog, Torrent, Male, Water, None, Quirky, 0.3, https://img.pokemondb.net/artwork/froakie.jpg, 41, 56, 40, 62, 44, 71
+41,Fletchling,661,Tiny Robin, Big Pecks, Female, Normal, Flying, Brave, 0.3, https://img.pokemondb.net/artwork/fletchling.jpg, 45, 50, 43, 40, 38, 62
+42,Espurr,677,Restraint, Infiltrator, Female, Psychic, None, Hardy, 0.3, https://img.pokemondb.net/artwork/espurr.jpg, 62, 48, 54, 63, 60, 68
+43,Spritzee,682,Perfume, Healer, Female, Fairy, None, Mild, 0.2, https://img.pokemondb.net/artwork/spritzee.jpg, 78, 52, 60, 63, 65, 23
+44,Binacle,688,Two-Handed, Tough Claws, Male, Rock, Water, Adamant, 0.5, https://img.pokemondb.net/artwork/binacle.jpg, 42, 52, 67, 39, 56, 50
+45,Rowlet,722,Grass Quill, Overgrow, Male, Grass, Flying, Jolly, 0.3, https://img.pokemondb.net/artwork/rowlet.jpg, 68, 55, 55, 50, 50, 42
+46,Litten,725,Fire Cat, Blaze, Female, Fire, None, Brave, 0.4, https://img.pokemondb.net/artwork/litten.jpg, 45, 65, 40, 60, 40, 70
+47,Popplio,728,Sea Lion, Torrent, Male, Water, None, Relaxed, 0.4, https://img.pokemondb.net/artwork/popplio.jpg, 50, 54, 54, 66, 56, 40
+48,Charjabug,737,Battery, Battery, Male, Bug, Electric, Rash, 0.5, https://img.pokemondb.net/artwork/charjabug.jpg, 57, 82, 95, 55, 75, 36
+49,Oranguru,765,Sage, Inner Focus, Male, Normal, Psychic, Modest, 1.5, https://img.pokemondb.net/artwork/oranguru.jpg, 90, 60, 80, 90, 110, 60
+50,Minior,774,Meteor, Shields Down, Female, Rock, Flying, Hardy, 0.3, https://img.pokemondb.net/artwork/minior.jpg, 60, 60, 100, 60, 100, 60

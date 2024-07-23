@@ -14,12 +14,21 @@ return new class extends Migration
         Schema::create('pokemon', function (Blueprint $table) {
             $table->id();
             $table->string('name', 50);
-            $table->integer('pokedex_index')->unsigned();
+            $table->smallInteger('pokedex_index')->unsigned();
+            $table->string('category', 100);
+            $table->string('ability', 100);
             $table->string('gender', 25);
-            $table->string('type', 150);
+            $table->string('primary_type', 30);
+            $table->string('secondary_type', 30)->nullable(true);
             $table->string('nature', 30);
             $table->decimal('size', $precision = 4, $scale = 2);
             $table->text('image_url');
+            $table->smallInteger('hp')->unsigned();
+            $table->smallInteger('atk')->unsigned();
+            $table->smallInteger('def')->unsigned();
+            $table->smallInteger('sp_atk')->unsigned();
+            $table->smallInteger('sp_def')->unsigned();
+            $table->smallInteger('speed')->unsigned();
             $table->timestamps();
         });
     }
