@@ -25,10 +25,7 @@
                     <td scope="col"><em>{{$pokemon->pokedex_index}}</em></td>
                     <td scope="col">{{$pokemon->gender}}</td>
                     <td scope="col">
-                        {{$pokemon->primary_type}}
-                        @if ($pokemon['secondary_type'] <> 'None')
-                            {{$pokemon->secondary_type}}
-                        @endif
+                        {{$pokemon->primary_type}} {{$pokemon->secondary_type}}
                     </td>
                     <td scope="col">
                         <a href="{{route('admin.pokemon.show', $pokemon)}}" class="btn btn-danger btn-sm">Info</a>

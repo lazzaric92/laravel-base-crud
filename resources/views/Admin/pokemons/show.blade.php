@@ -20,10 +20,7 @@
                         <p>Gender: {{$pokemon->gender}} </p>
                         <p>Nature: {{$pokemon->nature}}</p>
                         <p>Types:
-                            <strong>{{$pokemon->primary_type}}
-                            @if ($pokemon['secondary_type'] <> 'None')
-                            {{$pokemon->secondary_type}}
-                            @endif
+                            <strong>{{$pokemon->primary_type}} {{$pokemon->secondary_type}}
                             </strong> </p>
                         <p>Size: {{$pokemon->size}}m </p>
                     </div>
