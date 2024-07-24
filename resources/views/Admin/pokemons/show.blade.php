@@ -4,6 +4,10 @@
 'Info: {{$pokemon->name}} #{{$pokemon->pokedex_index}}'
 @endsection
 
+@section('head-cdn')
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+@endsection
+
 @section('main-content')
     <h2 class="text-center fw-bold mb-4">#{{$pokemon->pokedex_index}}: {{$pokemon->name}} </h2>
 
@@ -17,7 +21,15 @@
                     <div class="pkm-info ms-2">
                         <p class="fw-bold"><em>{{$pokemon->category}} Pokémon</em> </p>
                         <p>Ability: {{$pokemon->ability}} </p>
-                        <p>Gender: {{$pokemon->gender}} </p>
+                        <p>Gender:
+                            @if ( $pokemon->gender == 'Male' )
+                            <i class="fa-solid fa-mars"></i>
+                            @elseif( $pokemon->gender === 'Female' )
+                                <i class="fa-solid fa-venus"></i>
+                            @else
+                                <i class="fa-solid fa-genderless"></i>
+                            @endif
+                        </p>
                         <p>Nature: {{$pokemon->nature}}</p>
                         <p>Types:
                             <span class="badge rounded-pill {{$pokemon->primary_type}}">{{$pokemon->primary_type}}</span>
