@@ -20,8 +20,9 @@
                         <p>Gender: {{$pokemon->gender}} </p>
                         <p>Nature: {{$pokemon->nature}}</p>
                         <p>Types:
-                            <strong>{{$pokemon->primary_type}} {{$pokemon->secondary_type}}
-                            </strong> </p>
+                            <span class="badge rounded-pill {{$pokemon->primary_type}}">{{$pokemon->primary_type}}</span>
+                            <span class="badge rounded-pill {{$pokemon->secondary_type}}">{{$pokemon->secondary_type}}</span>
+                        </p>
                         <p>Size: {{$pokemon->size}}m </p>
                     </div>
                     <div class="pkm-stats me-5">

@@ -25,7 +25,8 @@
                     <td scope="col"><em>{{$pokemon->pokedex_index}}</em></td>
                     <td scope="col">{{$pokemon->gender}}</td>
                     <td scope="col">
-                        {{$pokemon->primary_type}} {{$pokemon->secondary_type}}
+                        <span class="badge rounded-pill {{$pokemon->primary_type}}">{{$pokemon->primary_type}}</span>
+                        <span class="badge rounded-pill {{$pokemon->secondary_type}}">{{$pokemon->secondary_type}}</span>
                     </td>
                     <td scope="col">
                         <a href="{{route('admin.pokemon.show', $pokemon)}}" class="btn btn-danger btn-sm ms-2">Info</a>
