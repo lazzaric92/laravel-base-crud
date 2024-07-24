@@ -29,6 +29,7 @@ return new class extends Migration
             $table->smallInteger('sp_atk')->unsigned();
             $table->smallInteger('sp_def')->unsigned();
             $table->smallInteger('speed')->unsigned();
+            $table->smallInteger('tot_stats')->unsigned();
             $table->timestamps();
         });
     }

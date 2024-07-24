@@ -28,9 +28,9 @@
                     <td scope="col">{{$pokemon->name}}</td>
                     <td scope="col"><em>{{$pokemon->pokedex_index}}</em></td>
                     <td scope="col">
-                        @if ( $pokemon->gender == 'Male' )
+                        @if ( lcfirst(trim($pokemon->gender)) == 'male' )
                             <i class="fa-solid fa-mars"></i>
-                        @elseif( $pokemon->gender === 'Female' )
+                        @elseif( lcfirst(trim($pokemon->gender)) === 'female' )
                             <i class="fa-solid fa-venus"></i>
                         @else
                             <i class="fa-solid fa-genderless"></i>

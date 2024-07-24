@@ -22,9 +22,9 @@
                         <p class="fw-bold"><em>{{$pokemon->category}} Pokémon</em> </p>
                         <p>Ability: {{$pokemon->ability}} </p>
                         <p>Gender:
-                            @if ( $pokemon->gender == 'Male' )
+                            @if ( lcfirst(trim($pokemon->gender)) == 'male' )
                             <i class="fa-solid fa-mars"></i>
-                            @elseif( $pokemon->gender === 'Female' )
+                            @elseif( lcfirst(trim($pokemon->gender)) === 'female' )
                                 <i class="fa-solid fa-venus"></i>
                             @else
                                 <i class="fa-solid fa-genderless"></i>
@@ -44,6 +44,7 @@
                         <p>Sp_atk: {{$pokemon->sp_atk}} </p>
                         <p>Sp_def: {{$pokemon->sp_def}} </p>
                         <p>Speed: {{$pokemon->speed}} </p>
+                        <p>Tot: {{$pokemon->tot_stats}} </p>
                     </div>
                 </div>
             </article>

@@ -36,6 +36,7 @@ class PokemonSeeder extends Seeder
                 $newPokemon->sp_atk = $singlePokemonData[14];
                 $newPokemon->sp_def = $singlePokemonData[15];
                 $newPokemon->speed = $singlePokemonData[16];
+                $newPokemon->tot_stats = $singlePokemonData[17];
                 $newPokemon->save();
             }
         }

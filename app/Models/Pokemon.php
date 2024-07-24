@@ -25,6 +25,7 @@ class Pokemon extends Model
         'def',
         'sp_atk',
         'sp_def',
-        'speed'
+        'speed',
+        'tot_stats'
     ];
 }

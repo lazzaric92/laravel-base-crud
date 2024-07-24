@@ -48,6 +48,7 @@ class PokemonController extends Controller
         $newPokemon->sp_atk = $data['sp_atk'];
         $newPokemon->sp_def = $data['sp_def'];
         $newPokemon->speed = $data['speed'];
+        $newPokemon->tot_stats = $data['tot_stats'];
         $newPokemon->save();
 
         // $newPokemon = Pokemon::create($data);
