@@ -28,7 +28,9 @@
                         {{$pokemon->primary_type}} {{$pokemon->secondary_type}}
                     </td>
                     <td scope="col">
-                        <a href="{{route('admin.pokemon.show', $pokemon)}}" class="btn btn-danger btn-sm">Info</a>
+                        <a href="{{route('admin.pokemon.show', $pokemon)}}" class="btn btn-danger btn-sm ms-2">Info</a>
+                        <a href="{{route('admin.pokemon.edit', $pokemon)}}" class="btn btn-success btn-sm ms-2">Edit</a>
+                        <a href="" class="btn btn-secondary btn-sm ms-2">Free</a>
                     </td>
                 </tr>
                 @endforeach

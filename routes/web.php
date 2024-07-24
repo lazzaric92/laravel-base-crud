@@ -15,7 +15,10 @@ use App\Http\Controllers\Admin\PokemonController as AdminPokemonController;
 |
 */
 
-Route::get('/', [AdminPokemonController::class, 'index'])->name('admin.pokemon.index');
-Route::get('/admin/create', [AdminPokemonController::class, 'create'])->name('admin.pokemon.create');
-Route::post('/admin/index', [AdminPokemonController::class, 'store'])->name('admin.pokemon.store');
-Route::get('/admin/pokemon{pokemon}', [AdminPokemonController::class, 'show'])->name('admin.pokemon.show');
+Route::get('/', [GuestPageController::class, 'index'])->name('guest.home');
+Route::get('/pokemon', [AdminPokemonController::class, 'index'])->name('admin.pokemon.index');
+Route::post('/pokemon', [AdminPokemonController::class, 'store'])->name('admin.pokemon.store');
+Route::get('/pokemon/create', [AdminPokemonController::class, 'create'])->name('admin.pokemon.create');
+Route::get('/pokemon/{pokemon}/edit', [AdminPokemonController::class, 'edit'])->name('admin.pokemon.edit');
+Route::get('/pokemon/{pokemon}', [AdminPokemonController::class, 'show'])->name('admin.pokemon.show');
+Route::put('/pokemon/{pokemon}', [AdminPokemonController::class, 'update'])->name('admin.pokemon.update');

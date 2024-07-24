@@ -14,7 +14,7 @@ class PokemonController extends Controller
     public function index()
     {
         $pokemons = Pokemon::all();
-        return view('Admin.pokemons.index', compact('pokemons'));
+        return view('admin.pokemons.index', compact('pokemons'));
     }
 
     /**
@@ -22,7 +22,7 @@ class PokemonController extends Controller
      */
     public function create()
     {
-        return view('Admin.pokemons.create');
+        return view('admin.pokemons.create');
     }
 
     /**
@@ -50,6 +50,8 @@ class PokemonController extends Controller
         $newPokemon->speed = $data['speed'];
         $newPokemon->save();
 
+        // $newPokemon = Pokemon::create($data);
+
         return redirect()->route('admin.pokemon.show', $newPokemon);
     }
 
@@ -58,23 +60,25 @@ class PokemonController extends Controller
      */
     public function show(Pokemon $pokemon)
     {
-        return view('Admin.pokemons.show', compact('pokemon'));
+        return view('admin.pokemons.show', compact('pokemon'));
     }
 
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(string $id)
+    public function edit(Pokemon $pokemon)
     {
-        //
+        return view('admin.pokemons.edit', compact('pokemon'));
     }
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, string $id)
+    public function update(Request $request, Pokemon $pokemon)
     {
-        //
+        $data = $request->all();
+        $pokemon->update($data);
+        return redirect()->route('admin.pokemon.show', $pokemon);
     }
 
     /**
