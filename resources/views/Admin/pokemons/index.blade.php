@@ -30,11 +30,19 @@
                     <td scope="col">
                         <a href="{{route('admin.pokemon.show', $pokemon)}}" class="btn btn-danger btn-sm ms-2">Info</a>
                         <a href="{{route('admin.pokemon.edit', $pokemon)}}" class="btn btn-success btn-sm ms-2">Edit</a>
-                        <a href="" class="btn btn-secondary btn-sm ms-2">Free</a>
+                        <form action="{{route('admin.pokemon.destroy', $pokemon)}}" method="POST" class="delete-form d-inline-block">
+                            @csrf
+                            @method('DELETE')
+                            <button type="submit" class="btn btn-secondary btn-sm ms-2">Free</button>
+                        </form>
                     </td>
                 </tr>
                 @endforeach
             </tbody>
         </table>
     </div>
+@endsection
+
+@section('custom-scripts')
+    @vite('resources/js/confirm-delete.js')
 @endsection
