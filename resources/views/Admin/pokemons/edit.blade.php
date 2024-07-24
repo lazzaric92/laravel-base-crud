@@ -6,7 +6,7 @@
     <div class="container py-4">
         <div class="row justify-content-center">
             <div class="col-4">
-                <form action="{{route('admin.pokemon.update', $pokemon)}}" method="POST">
+                <form action="{{route('admin.pokemon.update', $pokemon)}}" method="POST" id="edit-form">
                     @csrf
                     @method('PUT')
 
@@ -97,6 +97,9 @@
                 </form>
             </div>
         </div>
-
     </div>
+@endsection
+
+@section('custom-scripts')
+    @vite('resources/js/confirm-edit.js')
 @endsection

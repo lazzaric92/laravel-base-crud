@@ -37,6 +37,7 @@
             <div class="col-12 d-flex justify-content-around">
                 <a class="btn btn-success" href=" {{route('admin.pokemon.edit', $pokemon)}} ">Edit</a>
                 <a class="btn btn-danger" href=" {{route('admin.pokemon.index')}} ">Back to Safari Zone</a>
+                <a class="btn btn-secondary" href="">Free Pokémon</a>
             </div>
         </div>
     </div>

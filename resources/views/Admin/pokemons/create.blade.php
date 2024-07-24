@@ -6,7 +6,7 @@
     <div class="container py-4">
         <div class="row justify-content-center">
             <div class="col-4">
-                <form action="{{route('admin.pokemon.store')}}" method="POST">
+                <form action="{{route('admin.pokemon.store')}}" method="POST" id="create-form">
                     @csrf
 
                     <div class="mb-3">
@@ -89,12 +89,16 @@
                         <input type="number" class="form-control" id="speed" name="speed">
                     </div>
 
-                    <div class="d-flex justify-content-center">
+                    <div class="d-flex justify-content-around">
                         <button type="submit" class="btn btn-danger">Add</button>
+                        <button class="btn btn-warning">Clear fields</button>
                     </div>
                 </form>
             </div>
         </div>
-
     </div>
+@endsection
+
+@section('custom-scripts')
+    @vite('resources/js/confirm-create.js')
 @endsection
