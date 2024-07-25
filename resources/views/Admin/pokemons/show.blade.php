@@ -44,14 +44,91 @@
                         </p>
                         <p>Size: {{$pokemon->size}}m </p>
                     </div>
-                    <div class="pkm-stats me-5">
-                        <p>HP: {{$pokemon->hp}} </p>
-                        <p>Atk: {{$pokemon->atk}} </p>
-                        <p>Def: {{$pokemon->def}} </p>
-                        <p>Sp_atk: {{$pokemon->sp_atk}} </p>
-                        <p>Sp_def: {{$pokemon->sp_def}} </p>
-                        <p>Speed: {{$pokemon->speed}} </p>
-                        <p>Tot: {{$pokemon->tot_stats}} </p>
+                    <div class="pkm-stats w-50">
+                        <table class="table table-borderless">
+                            <thead>
+                                <tr>
+                                    <th class="w-25"></th>
+                                    <th class="w-25"></th>
+                                    <th colspan="3"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="align-baseline">
+                                    <td class="fw-bold text-center">HP</td>
+                                    <td>{{$pokemon->hp}}</td>
+                                    <td class="d-flex align-items-center">
+                                        <div class="progress w-100">
+                                            <div class="progress-bar bg-info" aria-valuemin="0" aria-valuemax="100" style="width:@php
+                                                echo ($pokemon->hp / 250 * 100)
+                                            @endphp%"></div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="align-baseline">
+                                    <td class="fw-bold text-center">Atk</td>
+                                    <td>{{$pokemon->atk}}</td>
+                                    <td class="d-flex align-items-center">
+                                        <div class="progress w-100">
+                                            <div class="progress-bar bg-info" aria-valuemin="0" aria-valuemax="100" style="width:@php
+                                                echo ($pokemon->atk / 250 * 100)
+                                            @endphp%"></div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="align-baseline">
+                                    <td class="fw-bold text-center">Def</td>
+                                    <td>{{$pokemon->def}}</td>
+                                    <td class="d-flex align-items-center">
+                                        <div class="progress w-100">
+                                            <div class="progress-bar bg-info" aria-valuemin="0" aria-valuemax="100" style="width:@php
+                                                echo ($pokemon->def / 250 * 100)
+                                            @endphp%"></div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="align-baseline">
+                                    <td class="fw-bold text-center">Sp.Atk</td>
+                                    <td>{{$pokemon->sp_atk}}</td>
+                                    <td class="d-flex align-items-center">
+                                        <div class="progress w-100">
+                                            <div class="progress-bar bg-info" aria-valuemin="0" aria-valuemax="100" style="width:@php
+                                                echo ($pokemon->sp_atk / 250 * 100)
+                                            @endphp%"></div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="align-baseline">
+                                    <td class="fw-bold text-center">Sp.Def</td>
+                                    <td>{{$pokemon->sp_def}}</td>
+                                    <td class="d-flex align-items-center">
+                                        <div class="progress w-100">
+                                            <div class="progress-bar bg-info" aria-valuemin="0" aria-valuemax="100" style="width:@php
+                                                echo ($pokemon->sp_def / 250 * 100)
+                                            @endphp%"></div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="align-baseline">
+                                    <td class="fw-bold text-center">Speed</td>
+                                    <td>{{$pokemon->speed}}</td>
+                                    <td class="d-flex align-items-center">
+                                        <div class="progress w-100">
+                                            <div class="progress-bar bg-info" aria-valuemin="0" aria-valuemax="100" style="width:@php
+                                                echo ($pokemon->speed / 250 * 100)
+                                            @endphp%"></div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="align-baseline">
+                                    <td class="fw-bold text-center" colspan="2">Tot. stats</td>
+                                    <td>{{$pokemon->tot_stats}}</td>
+                                    <td class="d-flex align-items-center">
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </article>
