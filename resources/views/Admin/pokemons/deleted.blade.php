@@ -55,7 +55,7 @@
                             @method('PATCH')
                             <button type="submit" class="btn btn-warning btn-sm ms-2">Restore</button>
                         </form>
-                        <form action="{{route('admin.pokemon.destroy', $pokemon)}}" method="POST" class="delete-form d-inline-block">
+                        <form action="{{route('admin.pokemon.hardDelete', $pokemon)}}" method="POST" class="delete-form d-inline-block">
                             @csrf
                             @method('DELETE')
                             <button type="submit" class="btn btn-secondary btn-sm ms-2">Free</button>

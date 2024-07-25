@@ -20,7 +20,7 @@ Route::get('/pokemon', [AdminPokemonController::class, 'index'])->name('admin.po
 Route::post('/pokemon', [AdminPokemonController::class, 'store'])->name('admin.pokemon.store');
 Route::get('/pokemon/create', [AdminPokemonController::class, 'create'])->name('admin.pokemon.create');
 Route::get('/pokemon/deleted', [AdminPokemonController::class, 'softDeleted'])->name('admin.pokemon.delete');
-Route::delete('/pokemon/{id}/hardDeleted', [AdminPokemonController::class, 'hardDelete'])->name('admin.pokemon.hardDelete');
+Route::delete('/pokemon/{id}/hard-deleted', [AdminPokemonController::class, 'hardDelete'])->name('admin.pokemon.hardDelete');
 Route::patch('/pokemon/{id}/restore', [AdminPokemonController::class, 'restore'])->name('admin.pokemon.restore');
 Route::get('/pokemon/{pokemon}', [AdminPokemonController::class, 'show'])->name('admin.pokemon.show');
 Route::put('/pokemon/{pokemon}', [AdminPokemonController::class, 'update'])->name('admin.pokemon.update');
