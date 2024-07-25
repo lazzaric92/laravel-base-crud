@@ -20,7 +20,7 @@
                 </div>
             @endif
 
-            <article class="col-12 d-flex justify-content-between border border-3 border-danger rounded-3 mb-4">
+            <article class="col-12 d-flex justify-content-between border border-4 border-danger rounded-3 mb-4">
                 <div class="card-image border-end p-4 border-3 border-danger">
                     <img src="{{ $pokemon->image_url }}" alt="{{$pokemon->name}}" class="me-4">
                 </div>
@@ -39,8 +39,8 @@
                         </p>
                         <p>Nature: {{$pokemon->nature}}</p>
                         <p>Types:
-                            <span class="badge rounded-pill {{lcfirst(trim($pokemon->primary_type))}}">{{$pokemon->primary_type}}</span>
-                            <span class="badge rounded-pill {{lcfirst(trim($pokemon->secondary_type))}}">{{$pokemon->secondary_type}}</span>
+                            <span class="badge rounded-pill text-uppercase {{lcfirst(trim($pokemon->primary_type))}}">{{$pokemon->primary_type}}</span>
+                            <span class="badge rounded-pill text-uppercase {{lcfirst(trim($pokemon->secondary_type))}}">{{$pokemon->secondary_type}}</span>
                         </p>
                         <p>Size: {{$pokemon->size}}m </p>
                     </div>

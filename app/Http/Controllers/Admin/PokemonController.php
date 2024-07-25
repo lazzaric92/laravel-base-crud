@@ -16,7 +16,7 @@ class PokemonController extends Controller
     public function index()
     {
         $pokemons = Pokemon::all();
-        return view('admin.pokemons.index', compact('pokemons'));
+        return view('Admin.pokemons.index', compact('pokemons'));
     }
 
     /**
@@ -24,7 +24,7 @@ class PokemonController extends Controller
      */
     public function create()
     {
-        return view('admin.pokemons.create');
+        return view('Admin.pokemons.create');
     }
 
     /**
@@ -63,7 +63,7 @@ class PokemonController extends Controller
      */
     public function show(Pokemon $pokemon)
     {
-        return view('admin.pokemons.show', compact('pokemon'));
+        return view('Admin.pokemons.show', compact('pokemon'));
     }
 
     /**
@@ -71,7 +71,7 @@ class PokemonController extends Controller
      */
     public function edit(Pokemon $pokemon)
     {
-        return view('admin.pokemons.edit', compact('pokemon'));
+        return view('Admin.pokemons.edit', compact('pokemon'));
     }
 
     /**
@@ -90,6 +90,27 @@ class PokemonController extends Controller
     public function destroy(Pokemon $pokemon)
     {
         $pokemon->delete();
-        return redirect()->route('admin.pokemon.index')->with('message', 'A pokémon has been freed');
+        return redirect()->route('admin.pokemon.index')->with('message', 'A pokémon is about to be freed');
+    }
+
+    public function softDeleted()
+    {
+        $pokemons = Pokemon::onlyTrashed()->get();
+        // dd($pokemons);
+        return view('Admin.pokemons.delete', compact('pokemons'));
+    }
+
+    public function restore(string $id)
+    {
+        $pokemon = Pokemon::onlyTrashed()->findOrFail($id);
+        $pokemon->restore();
+        return redirect()->route('admin.pokemon.delete', compact('id'))->with('message', $pokemon->name . ' returned to the Safari Zone');
+    }
+
+    public function hardDelete(string $id)
+    {
+        $pokemon = Pokemon::onlyTrashed()->findOrFail($id);
+        $pokemon->forceDelete();
+        return redirect()->route('admin.pokemon.delete', compact('id'))->with('message', $pokemon->name . ' has been freed');
     }
 }
