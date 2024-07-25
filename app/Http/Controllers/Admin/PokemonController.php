@@ -97,7 +97,7 @@ class PokemonController extends Controller
     {
         $pokemons = Pokemon::onlyTrashed()->get();
         // dd($pokemons);
-        return view('Admin.pokemons.delete', compact('pokemons'));
+        return view('Admin.pokemons.deleted', compact('pokemons'));
     }
 
     public function restore(string $id)
