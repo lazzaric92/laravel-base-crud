@@ -4,7 +4,7 @@ namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class StorePokemonRequest extends FormRequest
+class UpdatePokemonRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -38,7 +38,7 @@ class StorePokemonRequest extends FormRequest
             'sp_atk' => 'required|integer|min:1|max:500',
             'sp_def' => 'required|integer|min:1|max:500',
             'speed' => 'required|integer|min:1|max:500',
-            'tot_stats' => 'required|integer|min:1|max:1000',
+            'tot_stats' => 'required|integer|min:1|max:1000'
         ];
     }
 }

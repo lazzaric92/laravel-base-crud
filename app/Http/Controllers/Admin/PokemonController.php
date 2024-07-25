@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use App\Http\Requests\StorePokemonRequest;
+use App\Http\Requests\UpdatePokemonRequest;
 use Illuminate\Http\Request;
 use App\Models\Pokemon;
 
@@ -76,9 +77,9 @@ class PokemonController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, Pokemon $pokemon)
+    public function update(UpdatePokemonRequest $request, Pokemon $pokemon)
     {
-        $data = $request->all();
+        $data = $request->validated();
         $pokemon->update($data);
         return redirect()->route('admin.pokemon.show', $pokemon);
     }
