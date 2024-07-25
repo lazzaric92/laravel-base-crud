@@ -33,19 +33,20 @@ id,name,pokedex_index,category,ability,gender,primary_type,secondary_type,nature
 32,Gible,443,Land Shark, Sand Veil, Male, Dragon, Ground, Jolly, 0.7, https://img.pokemondb.net/artwork/gible.jpg, 58, 70, 45, 40, 45, 42,300
 33,Honchkrow,430,Big Boss, Super Luck, Female, Dark, Flying, Sassy, 0.9, https://img.pokemondb.net/artwork/honchkrow.jpg, 100, 125, 52, 105, 52, 71,505
 34,Glameow,431,Catty, Limber, Female, Normal,  , Naive, 0.5, https://img.pokemondb.net/artwork/glameow.jpg, 49, 55, 42, 42, 37, 85,310
-35,Purrloin,509,Devious, Limber, Female, Dark,  , Jolly, 0.4, https://img.pokemondb.net/artwork/purrloin.jpg, 41, 50, 37, 50, 37, 66,281
-36,Scraggy,559,Shedding, Moxie, Male, Dark, Fighting, Adamant, 0.6, https://img.pokemondb.net/artwork/scraggy.jpg, 50, 75, 70, 35, 70, 48,348
-37,Sigilyph,561,Avianoid, Magic Guard, Male, Psychic, Flying, Bold, 1.4, https://img.pokemondb.net/artwork/sigilyph.jpg, 72, 58, 80, 103, 80, 97,490
-38,Archeops,567,First Bird, Defeatist, Male, Rock, Flying, Rash, 1.4, https://img.pokemondb.net/artwork/archeops.jpg, 75, 140, 65, 112, 65, 110,567
-39,Frillish,592,Floating, Water Absorb, Male, Water, Ghost, Calm, 1.2, https://img.pokemondb.net/artwork/frillish.jpg, 55, 40, 50, 65, 85, 40,335
-40,Froakie,656,Bubble Frog, Torrent, Male, Water,  , Quirky, 0.3, https://img.pokemondb.net/artwork/froakie.jpg, 41, 56, 40, 62, 44, 71,314
-41,Fletchling,661,Tiny Robin, Big Pecks, Female, Normal, Flying, Brave, 0.3, https://img.pokemondb.net/artwork/fletchling.jpg, 45, 50, 43, 40, 38, 62,278
-42,Espurr,677,Restraint, Infiltrator, Female, Psychic,  , Hardy, 0.3, https://img.pokemondb.net/artwork/espurr.jpg, 62, 48, 54, 63, 60, 68,355
-43,Spritzee,682,Perfume, Healer, Female, Fairy,  , Mild, 0.2, https://img.pokemondb.net/artwork/spritzee.jpg, 78, 52, 60, 63, 65, 23,341
-44,Binacle,688,Two-Handed, Tough Claws, Male, Rock, Water, Adamant, 0.5, https://img.pokemondb.net/artwork/binacle.jpg, 42, 52, 67, 39, 56, 50,306
+35,Lucario,448,Aura,Inner Focus,Male,Fighting,Steel,Brave,1.2,https://img.pokemondb.net/artwork/lucario.jpg,70,110,70,115,70,90,525
+36,Purrloin,509,Devious, Limber, Female, Dark,  , Jolly, 0.4, https://img.pokemondb.net/artwork/purrloin.jpg, 41, 50, 37, 50, 37, 66,281
+37,Scraggy,559,Shedding, Moxie, Male, Dark, Fighting, Adamant, 0.6, https://img.pokemondb.net/artwork/scraggy.jpg, 50, 75, 70, 35, 70, 48,348
+38,Sigilyph,561,Avianoid, Magic Guard, Male, Psychic, Flying, Bold, 1.4, https://img.pokemondb.net/artwork/sigilyph.jpg, 72, 58, 80, 103, 80, 97,490
+39,Archeops,567,First Bird, Defeatist, Male, Rock, Flying, Rash, 1.4, https://img.pokemondb.net/artwork/archeops.jpg, 75, 140, 65, 112, 65, 110,567
+40,Frillish,592,Floating, Water Absorb, Male, Water, Ghost, Calm, 1.2, https://img.pokemondb.net/artwork/frillish.jpg, 55, 40, 50, 65, 85, 40,335
+41,Froakie,656,Bubble Frog, Torrent, Male, Water,  , Quirky, 0.3, https://img.pokemondb.net/artwork/froakie.jpg, 41, 56, 40, 62, 44, 71,314
+42,Fletchling,661,Tiny Robin, Big Pecks, Female, Normal, Flying, Brave, 0.3, https://img.pokemondb.net/artwork/fletchling.jpg, 45, 50, 43, 40, 38, 62,278
+43,Espurr,677,Restraint, Infiltrator, Female, Psychic,  , Hardy, 0.3, https://img.pokemondb.net/artwork/espurr.jpg, 62, 48, 54, 63, 60, 68,355
+44,Spritzee,682,Perfume, Healer, Female, Fairy,  , Mild, 0.2, https://img.pokemondb.net/artwork/spritzee.jpg, 78, 52, 60, 63, 65, 23,341
 45,Rowlet,722,Grass Quill, Overgrow, Male, Grass, Flying, Jolly, 0.3, https://img.pokemondb.net/artwork/rowlet.jpg, 68, 55, 55, 50, 50, 42,320
 46,Litten,725,Fire Cat, Blaze, Female, Fire,  , Brave, 0.4, https://img.pokemondb.net/artwork/litten.jpg, 45, 65, 40, 60, 40, 70,320
 47,Popplio,728,Sea Lion, Torrent, Male, Water,  , Relaxed, 0.4, https://img.pokemondb.net/artwork/popplio.jpg, 50, 54, 54, 66, 56, 40,320
 48,Charjabug,737,Battery, Battery, Male, Bug, Electric, Rash, 0.5, https://img.pokemondb.net/artwork/charjabug.jpg, 57, 82, 95, 55, 75, 36,400
 49,Oranguru,765,Sage, Inner Focus, Male, Normal, Psychic, Modest, 1.5, https://img.pokemondb.net/artwork/oranguru.jpg, 90, 60, 80, 90, 110, 60,490
 50,Minior,774,Meteor, Shields Down, Female, Rock, Flying, Hardy, 0.3, https://img.pokemondb.net/artwork/minior.jpg, 60, 60, 100, 60, 100, 60,440
+51,Mimikyu,778,Disguise,Disguise,Female,Ghost,Fairy,Careful,0.2,https://img.pokemondb.net/artwork/mimikyu.jpg,55,90,80,50,105,96,476

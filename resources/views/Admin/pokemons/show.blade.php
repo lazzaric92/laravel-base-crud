@@ -32,8 +32,8 @@
                         </p>
                         <p>Nature: {{$pokemon->nature}}</p>
                         <p>Types:
-                            <span class="badge rounded-pill {{$pokemon->primary_type}}">{{$pokemon->primary_type}}</span>
-                            <span class="badge rounded-pill {{$pokemon->secondary_type}}">{{$pokemon->secondary_type}}</span>
+                            <span class="badge rounded-pill {{lcfirst(trim($pokemon->primary_type))}}">{{$pokemon->primary_type}}</span>
+                            <span class="badge rounded-pill {{lcfirst(trim($pokemon->secondary_type))}}">{{$pokemon->secondary_type}}</span>
                         </p>
                         <p>Size: {{$pokemon->size}}m </p>
                     </div>
