@@ -13,6 +13,13 @@
 
     <div class="container py-3" id="show-pokemon">
         <div class="row">
+
+            @if (session('message'))
+                <div class="alert alert-success">
+                    {{ session('message')}}
+                </div>
+            @endif
+
             <article class="col-12 d-flex justify-content-between border border-3 border-danger rounded-3 mb-4">
                 <div class="card-image border-end p-4 border-3 border-danger">
                     <img src="{{ $pokemon->image_url }}" alt="{{$pokemon->name}}" class="me-4">

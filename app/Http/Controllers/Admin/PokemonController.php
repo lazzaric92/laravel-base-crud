@@ -55,7 +55,7 @@ class PokemonController extends Controller
 
         // $newPokemon = Pokemon::create($data);
 
-        return redirect()->route('admin.pokemon.show', $newPokemon);
+        return redirect()->route('admin.pokemon.show', $newPokemon)->with('message', 'A new pokémon joined the Safari Zone!');
     }
 
     /**
@@ -81,7 +81,7 @@ class PokemonController extends Controller
     {
         $data = $request->validated();
         $pokemon->update($data);
-        return redirect()->route('admin.pokemon.show', $pokemon);
+        return redirect()->route('admin.pokemon.show', $pokemon)->with('message', 'Pokémon data updated succesfully');
     }
 
     /**
@@ -90,6 +90,6 @@ class PokemonController extends Controller
     public function destroy(Pokemon $pokemon)
     {
         $pokemon->delete();
-        return redirect()->route('admin.pokemon.index');
+        return redirect()->route('admin.pokemon.index')->with('message', 'A pokémon has been freed');
     }
 }

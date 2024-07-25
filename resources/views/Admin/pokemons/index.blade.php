@@ -10,6 +10,13 @@
     <h1 class="text-center fw-bold mb-5">Safari Zone</h1>
 
     <div class="container">
+
+        @if (session('message'))
+            <div class="alert alert-secondary">
+                {{ session('message')}}
+            </div>
+        @endif
+
         <table class="table table-hover table-striped text-center">
             <thead class="table-danger">
                 <tr>
@@ -17,6 +24,7 @@
                     <th scope="col">Name</th>
                     <th scope="col"><em>Pokedex Index</em></th>
                     <th scope="col">Gender</th>
+                    <th scope="col">Nature</th>
                     <th scope="col">Type</th>
                     <th scope="col">Actions</th>
                 </tr>
@@ -36,6 +44,7 @@
                             <i class="fa-solid fa-genderless"></i>
                         @endif
                     </td>
+                    <td scope="col">{{$pokemon->nature}}</td>
                     <td scope="col">
                         <span class="badge rounded-pill {{lcfirst(trim($pokemon->primary_type))}}">{{$pokemon->primary_type}}</span>
                         <span class="badge rounded-pill {{lcfirst(trim($pokemon->secondary_type))}}">{{$pokemon->secondary_type}}</span>
