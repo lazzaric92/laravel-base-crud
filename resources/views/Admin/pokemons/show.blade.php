@@ -58,9 +58,9 @@
                                     <td class="fw-bold text-center">HP</td>
                                     <td>{{$pokemon->hp}}</td>
                                     <td class="d-flex align-items-center">
-                                        <div class="progress w-100">
-                                            <div class="progress-bar bg-info" aria-valuemin="0" aria-valuemax="100" style="width:@php
-                                                echo ($pokemon->hp / 250 * 100)
+                                        <div class="progress w-100 bg-transparent">
+                                            <div class="progress-bar bg-info rounded" aria-valuemin="0" aria-valuemax="100" style="width:@php
+                                                echo ($pokemon->hp / 255 * 100)
                                             @endphp%"></div>
                                         </div>
                                     </td>
@@ -69,9 +69,9 @@
                                     <td class="fw-bold text-center">Atk</td>
                                     <td>{{$pokemon->atk}}</td>
                                     <td class="d-flex align-items-center">
-                                        <div class="progress w-100">
-                                            <div class="progress-bar bg-info" aria-valuemin="0" aria-valuemax="100" style="width:@php
-                                                echo ($pokemon->atk / 250 * 100)
+                                        <div class="progress w-100 bg-transparent">
+                                            <div class="progress-bar bg-info rounded" aria-valuemin="0" aria-valuemax="100" style="width:@php
+                                                echo ($pokemon->atk / 255 * 100)
                                             @endphp%"></div>
                                         </div>
                                     </td>
@@ -80,9 +80,9 @@
                                     <td class="fw-bold text-center">Def</td>
                                     <td>{{$pokemon->def}}</td>
                                     <td class="d-flex align-items-center">
-                                        <div class="progress w-100">
-                                            <div class="progress-bar bg-info" aria-valuemin="0" aria-valuemax="100" style="width:@php
-                                                echo ($pokemon->def / 250 * 100)
+                                        <div class="progress w-100 bg-transparent">
+                                            <div class="progress-bar bg-info rounded" aria-valuemin="0" aria-valuemax="100" style="width:@php
+                                                echo ($pokemon->def / 255 * 100)
                                             @endphp%"></div>
                                         </div>
                                     </td>
@@ -91,9 +91,9 @@
                                     <td class="fw-bold text-center">Sp.Atk</td>
                                     <td>{{$pokemon->sp_atk}}</td>
                                     <td class="d-flex align-items-center">
-                                        <div class="progress w-100">
-                                            <div class="progress-bar bg-info" aria-valuemin="0" aria-valuemax="100" style="width:@php
-                                                echo ($pokemon->sp_atk / 250 * 100)
+                                        <div class="progress w-100 bg-transparent">
+                                            <div class="progress-bar bg-info rounded" aria-valuemin="0" aria-valuemax="100" style="width:@php
+                                                echo ($pokemon->sp_atk / 255 * 100)
                                             @endphp%"></div>
                                         </div>
                                     </td>
@@ -102,9 +102,9 @@
                                     <td class="fw-bold text-center">Sp.Def</td>
                                     <td>{{$pokemon->sp_def}}</td>
                                     <td class="d-flex align-items-center">
-                                        <div class="progress w-100">
-                                            <div class="progress-bar bg-info" aria-valuemin="0" aria-valuemax="100" style="width:@php
-                                                echo ($pokemon->sp_def / 250 * 100)
+                                        <div class="progress w-100 bg-transparent">
+                                            <div class="progress-bar bg-info rounded" aria-valuemin="0" aria-valuemax="100" style="width:@php
+                                                echo ($pokemon->sp_def / 255 * 100)
                                             @endphp%"></div>
                                         </div>
                                     </td>
@@ -113,9 +113,9 @@
                                     <td class="fw-bold text-center">Speed</td>
                                     <td>{{$pokemon->speed}}</td>
                                     <td class="d-flex align-items-center">
-                                        <div class="progress w-100">
-                                            <div class="progress-bar bg-info" aria-valuemin="0" aria-valuemax="100" style="width:@php
-                                                echo ($pokemon->speed / 250 * 100)
+                                        <div class="progress w-100 bg-transparent">
+                                            <div class="progress-bar bg-info rounded" aria-valuemin="0" aria-valuemax="100" style="width:@php
+                                                echo ($pokemon->speed / 255 * 100)
                                             @endphp%"></div>
                                         </div>
                                     </td>

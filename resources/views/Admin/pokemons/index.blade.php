@@ -47,7 +47,10 @@
                     <td scope="col">{{$pokemon->nature}}</td>
                     <td scope="col">
                         <span class="badge rounded-pill text-uppercase {{lcfirst(trim($pokemon->primary_type))}}">{{$pokemon->primary_type}}</span>
-                        <span class="badge rounded-pill text-uppercase {{lcfirst(trim($pokemon->secondary_type))}}">{{$pokemon->secondary_type}}</span>
+                        @if (lcfirst(trim($pokemon->secondary_type)) != '')
+                            <span class="badge rounded-pill text-uppercase {{lcfirst(trim($pokemon->secondary_type))}}">{{$pokemon->secondary_type}}</span>
+                        @endif
+
                     </td>
                     <td scope="col">
                         <a href="{{route('admin.pokemon.show', $pokemon)}}" class="btn btn-danger btn-sm ms-2">Info</a>
